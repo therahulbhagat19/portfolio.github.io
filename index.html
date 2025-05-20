@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8782ddcf3b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+</body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#services">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>
+                Software and Machine Learning Engineer
+            </p>
+            <h1>
+                Hey, I'm <span>Rahul Bhagat</span><br> from India
+            </h1>
+        </div>
+    </div>
+</div>
+<!---------------------about--------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> <img src="images/user.JPG"> </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About <span>Me</span></h1>
+                <p>
+                    I am a software engineer with a passion for machine learning and data science. I have experience in
+                    developing Data Science Solutions and implementing machine learning algorithms. I am always eager to
+                    learn new technologies and improve my skills.
+                    I have a strong foundation in programming languages such as Python and C++. I am also proficient in
+                    using various machine learning libraries and frameworks such as TensorFlow, Pytorch and
+                    Scikit-learn. I have worked on several projects involving data analysis, predictive modeling, and
+                    natural language processing.
+                    I also have experience in parallel computing and distributed systems, which allows me to efficiently
+                    process large datasets and build scalable machine learning models. I am familiar with cloud
+                    platforms such as AWS and Google Cloud, which enables me to deploy my models in production
+                    environments.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning</span></li>
+                        <li><span>Software Development</span></li>
+                        <li><span>Parallel Computing</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025-Present</span><br>Incoming Software Engineer at Goldman Sachs</li>
+                        <li><span>2024-2025</span><br> AI Intern at Affine Analytics</li>
+                        <li><span>2023-2024</span><br> AI/ML Intern at GenVR Research</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2025</span><br>Integrated Master of Science Physics at IIT Kharagpur</li>
+                        <li><span>2005-2019</span><br>ISC and ICSE at Loyola School Taldanga</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------services--------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        I can help you build machine learning models that can learn from data and make predictions. I
+                        have experience in supervised and unsupervised learning, as well as deep learning techniques.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Devolopment</h2>
+                    <p>
+                        I can help you build software applications that are efficient, scalable, and maintainable. I
+                        have experience in various programming languages and frameworks, and I can work on both
+                        front-end and back-end development.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Parallel Computing</h2>
+                    <p>
+                        I can help you optimize your code for parallel execution, allowing you to take advantage of
+                        multiple processors and cores. I have experience in using parallel computing libraries and
+                        frameworks such as CUDA and OpenMP.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------portfolio--------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Multi-Agent Marketing App</h3>
+                        <p>
+                            This is a multi-agent marketing app that uses Langgraph and OpenAI API to give you a complete
+                            marketing campaign, given product description and product image.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Fine-Tuned Customer Relations Chatbot</h3>
+                        <p>
+                            This is a chatbot, finetune on customer relations data, that can answer questions about
+                            customer relations and provide information about products and services.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>AI Coupon Extractor</h3>
+                        <p>
+                            This is a web app that uses OpenAI API to extract coupons from images in tabular format.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rahulbhagat90838@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7001754671</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rahul</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+</body>
+
+</html>
