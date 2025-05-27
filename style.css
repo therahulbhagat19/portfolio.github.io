@@ -365,7 +365,7 @@ nav .fas{
         background-image: url(images/background.jpg);
     }
     .header-text{
-        margin-top:50%;
+        margin-top:40%;
         font-size:16px;
 
     }
@@ -409,6 +409,9 @@ nav .fas{
     }
 
     .subtitle{
+        font-size: 40px;
+    }
+    .subtitle span{
         font-size: 40px;
     }
     .about-col-1, .about-col-2{
