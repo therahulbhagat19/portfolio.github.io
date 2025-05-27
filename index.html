@@ -16,13 +16,15 @@
     <div class="container">
         <nav>
             <img src="images/logo2.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#services">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>
@@ -129,7 +131,8 @@
                     <div class="layer">
                         <h3>Multi-Agent Marketing App</h3>
                         <p>
-                            This is a multi-agent marketing app that uses Langgraph and OpenAI API to give you a complete
+                            This is a multi-agent marketing app that uses Langgraph and OpenAI API to give you a
+                            complete
                             marketing campaign, given product description and product image.
                         </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -206,8 +209,19 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
 
 
-</body>
+    </body>
 
 </html>
